@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SDLC Models</title>
+</head>
+<body>
+    <h2>SDLC Models</h2>
+    <div class="image-contaier" style="text-align: center;" >
+         <img src="images/sdlc-models.png" alt="" width="500px"  >
+    </div>
+   
+<button class="accordion" style="text-align: center;font-size: medium;font-weight: bold;";>Waterfall</button>
+<div class="panel" style="text-align: center;">
+
+    <img src="images/what-is-software-development-3.png.webp" alt="" width="500px" >
+  <p>The waterfall model is a continuous software development model in 
+      which development is seen as flowing steadily downwards (like a waterfall) 
+      through the steps of requirements analysis, design, implementation, 
+      testing (validation), integration, and maintenance.
+
+      <p>Linear ordering of activities has some significant consequences. 
+    First, to identify the end of a phase and the beginning of the next, 
+    some certification techniques have to be employed at the end of each step. 
+    Some verification and validation usually do this mean that will ensure that
+    the output of the stage is consistent with its input (which is the output of the previous step),
+    and that the output of the stage is consistent with the overall requirements of the system.</p>
+    
+    </div>
+
+<button class="accordion" style="text-align: center;font-size: medium;font-weight: bold">Prototyping</button>
+<div class="panel" style="text-align: center;">
+  <p>The prototyping model starts with the requirements gathering. 
+      The developer and the user meet and define the purpose of the software, identify the needs, etc.
+
+    <p>A 'quick design' is then created. This design focuses on those aspects of the software that will be visible to the user.
+    It then leads to the development of a prototype. 
+    The customer then checks the prototype, and any modifications or changes that are needed are made to the prototype.
+    
+    <p>Looping takes place in this step, and better versions of the prototype are created. 
+    These are continuously shown to the user so that any new changes can be updated in the prototype. 
+    This process continue until the customer is satisfied with the system. 
+    Once a user is satisfied, the prototype is converted to the actual system with all considerations for quality and security.</p>
+</div>
+
+<button class="accordion"style="text-align: center;font-size: medium;font-weight: bold">Iterative</button>
+<div class="panel" style="text-align: center;">
+  <p>It is a particular implementation of a software development life cycle that focuses on an initial, 
+    simplified implementation, which then progressively gains more complexity and a broader feature set 
+    until the final system is complete. In short, iterative development is a way of breaking down the software development
+     of a large application into smaller pieces.</p>
+</div>
+
+<button class="accordion"style="text-align: center;font-size: medium;font-weight: bold">Spiral</button>
+<div class="panel"style="text-align: center;">
+    <img src="images/what-is-software-development-6.png.webp" alt="" width="500px" >
+  <p>The spiral model is a risk-driven process model. 
+    This SDLC model helps the group to adopt elements of one or more process models like a waterfall, incremental, waterfall, etc.
+    The spiral technique is a combination of rapid prototyping and concurrency in design and development activities.
+
+    <p>Each cycle in the spiral begins with the identification of objectives for that cycle, 
+        the different alternatives that are possible for achieving the goals, and the constraints that exist. 
+        This is the first quadrant of the cycle (upper-left quadrant).
+    
+    <p>The next step in the cycle is to evaluate these different alternatives based on the objectives and constraints. 
+        The focus of evaluation in this step is based on the risk perception for the project.
+    
+    <p>The next step is to develop strategies that solve uncertainties and risks. 
+    This step may involve activities such as benchmarking, simulation, and prototyping.</p>
+</div>
+
+<button class="accordion"style="text-align: center;font-size: medium;font-weight: bold">V-Shape</button>
+<div class="panel"style="text-align: center;">
+    <img src="images/what-is-software-development-7.png.webp" alt="" width="500px" >
+  <p>In this type of SDLC model testing and the development, the step is planned in parallel.
+    So, there are verification phases on the side and the validation phase on the other side. 
+    V-Model joins by Coding phase.</p>
+</div>
+
+<button class="accordion"style="text-align: center;font-size: medium;font-weight: bold">Agile</button>
+<div class="panel"style="text-align:center;">
+  <p>Agile methodology is a practice which promotes continues interaction of development and testing during the SDLC process
+    of any project. In the Agile method, the entire project is divided into small incremental builds.
+    All of these builds are provided in iterations, and each iteration lasts from one to three weeks.
+
+    <p>Any agile software phase is characterized in a manner that addresses several key assumptions about the bulk of software projects:
+    
+       <p>1. It is difficult to think in advance which software requirements will persist and which will change. 
+        It is equally difficult to predict how user priorities will change as the project proceeds.
+      <p>2. For many types of software, design and development are interleaved. 
+          That is, both activities should be performed in tandem so that design models are proven as they are created. 
+          It is difficult to think about how much design is necessary before construction is used to test the configuration.
+      <p>3. Analysis, design, development, and testing are not as predictable (from a planning point of view) as we might like.
+    </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
