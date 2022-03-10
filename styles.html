@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Programming styles</title>
+</head>
+<body>
+    <h2>Programming styles</h2>        
+    
+    <button class="accordion">Behavior-driven developments (BDD)</button>
+    <div class="panel">
+        <p>
+            Tests are written in a non-technical language that everyone can understand. 
+            BDD combines the principles of TDD and ATDD and forms an approach for building a shared understanding on what kind of software to build by discussing examples. 
+            BDD brings customers, end-users, BAs, QAs, and SEs of the software product into one table for effective sharing of knowledge on the system and its testing requirements.
+
+            <p>BDD consists of cycles of a set of steps to follow:</p>
+            <ol>
+                <li>Identify business feature.</li>
+                <li>Identify scenarios under the selected feature.</li> 
+                <li>Define steps for each scenario.</li>
+                <li>Run feature and fail.</li>
+                <li>Write code to make steps pass.</li>
+                <li>Refactor code, Create reusable automation library.</li>
+                <li>Run feature and pass.</li>
+                <li>Generate test reports.</li>
+            </ol>
+        </p>
+        </div>
+       
+        <button class="accordion">Test-driven development (TDD)</button>
+    <div class="panel">
+        <p>
+            Tests are written before code and passing the tests is the critical driver of development. 
+        </p>
+        <img src="images/tddSteps.jpg" alt="" width="500px" >
+        </div>
+        
+        <button class="accordion">Design-driven development</button>
+        <div class="panel">
+            <p>
+                Uses design as part of a process to learn and better define requirements in order to build better, more informed technology solutions. 
+                It can also be looked at as a process whereby design and user experience drives the development of a product or software application.
+            </p>
+        </div>
+
+        <button class="accordion">Domain-driven design (DDD)</button>
+        <div class="panel">
+            <p>
+                Focusing on modelling software to match a domain according to input from that domain's experts. 
+                It means that the structure and language of software code (class names, class methods, class variables) should match the business domain. 
+                For example, if a software processes loan applications, it might have classes like LoanApplication and Customer, and methods such as AcceptOffer and Withdraw.
+
+            </p>
+        </div>
+        <button class="accordion">Acceptance test-driven development (ATDD)</button>
+        <div class="panel">
+            <p>
+                Team members with different perspectives (customer, business analyst, tester, developer) collaborate
+                 and write acceptance tests in advance of implementing the corresponding functionality.
+
+            </p>
+        </div>
+        <button class="accordion">Continuous test-driven development (CTDD)</button>
+        <div class="panel">
+            <p>
+                The developer writes a test first but is not forced to execute the tests manually. 
+                The tests are run automatically by a continuous testing tool running in the background. 
+                This technique can potentially reduce the time waste resulting from manual test execution by eliminating 
+                the need for the developer to start the test after each phase of the normal TDD practice.
+            </p>
+        </div>
+        <button class="accordion">Specification by example (SBE)</button>
+        <div class="panel">
+            <p>
+                A collaborative approach to defining requirements and business-oriented functional tests for software products based on capturing and illustrating
+                 requirements using realistic examples instead of abstract statements.
+            </p>
+        </div>
+        <button class="accordion">Data-driven development</button>
+        <div class="panel">
+            <p>
+                Relies on data to guide the development process. 
+                It involves selecting and monitoring metrics or key performance indicators (KPIs) that help you better understand your product 
+                so you can make continuous improvements.
+            </p>
+
+        </div>
+        <button class="accordion">Data-oriented design</button>
+        <div class="panel">
+            <p>
+                A program optimization approach motivated by efficient usage of the CPU cache, used in video game development. 
+                The approach is to focus on the data layout, separating and sorting fields according to when they are needed, and to think about transformations of data.
+            </p>
+        </div>
+        <button class="accordion">Secure by design</button>
+        <div class="panel">
+            <p>
+                Software products and capabilities have been designed to be foundationally secure.
+            </p>
+        </div>
+
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+            </script>
+    
+</body>
+</html>
