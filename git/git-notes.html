@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        code{
+            background-color: black;
+            color: white;
+            font-size: 1rem;
+        }
+        .row{
+            display: flex;
+        }
+        .column{
+            flex: 50%;
+            padding: 16px;
+            height: 1200px;
+        }
+    </style>
+    <title>Git and Github</title>
+</head>
+<body>
+    <h1>Git and Github </h2>
+    <div class="row" style="text-align: center;">
+       <div class="column" style="background: #CCCCCC">
+        <img src="../images/1280px-Git-logo.svg.png" alt="" width="300px">
+        
+        <div class="row" style="text-align: left;">
+        <p> Git is a version control system which allows you to manage source code history. It can be downloaded, so it's a local tool that you install to your machine. 
+            It's possible to push your code to Github for others to see. There's no interface - it is ran by terminal.</p></div>
+
+          
+            <li>Repository - location where your code history is stored</li>
+            <li>Branch - "Folder" within the repository containing commits</li>
+            <li>Commits - Different stages of your code inside a branch</li>
+       
+         
+            <p><h3>Command</h3>
+        <code>$git init</code> <p>Initializes a local Git in a repository</p>
+        <code>$git status</code> <p>Displays the state of the working directory and the staging area</p>
+        <code>$git add .</code> <p>Adds a change in the working directory to the staing area</p>
+        <code>$git commit -m "..."</code> <p>Saves changes to the local repository</p>
+        <code>$git branch</code> <p>Creates a master branch</p>
+        <code>$git log</code> <p>Detailed history of repository </p>
+        <code>$git checkout (+commit id)</code> <p>Switches the currently active branch. Best to use if you want to check previous code</p>
+        <code>$git master</code> <p>Switches to last commit or master branch</p>
+        <code>$git reset --hard ...</code> <p>Moves current Head to commit specified, add commit id to the end</p>
+        <code>$git checkout -- .</code> <p>Reverts saved changes</p>
+        <code>$git checkout -b branch-name</code> <p>Switches to new branch (not master) that contains everything from master branch</p>
+        <code>$git merge (+new branch name)</code> <p>Merges two branches. Enter commit while in master branch.</p>
+        <code>$git branch -D branch-name</code> <p>Deletes specified branch</p>
+
+
+        
+       </div>
+
+       <div class="column" style="background: #d3d3d3">
+        <img src="../images/github3.png" alt="Github" width="300px">
+        
+        <p> Github is a hosting and collaboration provider which has the purpose to host your git repositories. It's a web based solution, so it's a remote tool. 
+            An account is needed in order to use it. Create a repository in Github beforehand.
+              </p>
+              
+
+        <h3>Command</h3>
+              <code>$git remote add origin ...</code> <p>Add a link to your github repository. Creates a connection between local and remote repository</p>
+              <code>$git push -u origin master</code> <p>Pushes branches to remote repository (to Github) </p>
+              <code>$git clone </code> <p>Copies an existing Git repository </p>
+              <code>$git push</code> <p>Same as mentioned before, except </p>
+              <code>$git fetch</code> <p>Allows to get the code from Github. It just syncs code, needs merging after!</p>
+              <code>$git pull</code> <p>Same as fetch, except it merges master/origin for you and you'll get the code to local</p>
+
+       </div>
+     </div>
+     
+
+
+     
+
+          
+    
+    
+</body>
+</html>
